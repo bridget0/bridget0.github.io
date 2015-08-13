@@ -1,25 +1,27 @@
 
- <!DOCTYPE HTML>
+  
+    <!DOCTYPE HTML>
 <html >
 <head>
   <meta charset="UTF-8">
   
-    <title>Red programming language</title>
+    <title>Introduction | Red programming language</title>
     <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
     
     <meta name="author" content="Red">
     
 
     
-    <meta name="description" content="Red programming language-The world&apos;s first full-stack programming language">
+    <meta name="description" content="Red is a new programming language, strongly inspired by REBOL, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting, while providing mo">
 <meta property="og:type" content="website">
-<meta property="og:title" content="Red programming language">
-<meta property="og:url" content="http://http://bridget0.github.io/index.html">
+<meta property="og:title" content="Introduction">
+<meta property="og:url" content="http://http://bridget0.github.io/Introduction/index.html">
 <meta property="og:site_name" content="Red programming language">
-<meta property="og:description" content="Red programming language-The world&apos;s first full-stack programming language">
+<meta property="og:description" content="Red is a new programming language, strongly inspired by REBOL, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting, while providing mo">
+<meta property="og:updated_time" content="2015-08-13T07:57:02.352Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Red programming language">
-<meta name="twitter:description" content="Red programming language-The world&apos;s first full-stack programming language">
+<meta name="twitter:title" content="Introduction">
+<meta name="twitter:description" content="Red is a new programming language, strongly inspired by REBOL, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting, while providing mo">
 
     
     <link rel="alternative" href="/atom.xml" title="Red programming language" type="application/atom+xml">
@@ -34,9 +36,9 @@
     <link rel="stylesheet" href="/css/style.css" type="text/css">
 </head>
 
-  <body>
-    <header>
-      
+      <body>
+        <header>
+          
 <div>
 		
 			<div id="imglogo">
@@ -73,44 +75,37 @@
 				</ul>
 			</nav>			
 </div>
-    </header>
-    <div id="container">
-      <div id="main">
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
+        </header>
+        <div id="container">
+          <div id="main" class="page" itemscope itemprop="blogPost">
+  
+	<article itemprop="articleBody"> 
+		<header class="article-info clearfix">
   <h1 itemprop="name">
     
-      <a href="/2015/08/13/Introduction/" title="Introduction" itemprop="url">Introduction</a>
+      <a href="/Introduction/index.html" title="Introduction" itemprop="url">Introduction</a>
   </h1>
   <p class="article-author">By
        
 		<a href="/about" title="Red" target="_blank" itemprop="author">Red</a>
 		
   <p class="article-time">
-    <time datetime="2015-08-13T08:40:15.335Z" itemprop="datePublished"> 發表於 2015-08-13</time>
+    <time datetime="2015-08-13T07:57:02.352Z" itemprop="datePublished"> 發表於 2015-08-13</time>
     
   </p>
 </header>
-    <div class="article-content">
-        
-        <p>Red is a new programming language, strongly inspired by REBOL, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting, while providing modern support for concurrency and multi-core CPUs.</p>
+	<div class="article-content">
+		
+		<p>Red is a new programming language, strongly inspired by REBOL, but with a broader field of usage thanks to its native-code compiler, from system programming to high-level scripting, while providing modern support for concurrency and multi-core CPUs.</p>
 <h3 id="Main_characteristics_are:">Main characteristics are:</h3><ul><br>    <li>Functional, imperative and symbolic</li><br>    <li>Prototype-based object support</li><br>    <li>Homoiconic (Red is its own meta-language)</li><br>    <li>Optionally typed, rich set of datatypes (50+)</li><br>    <li>Both statically and JIT-compiled to native code</li><br>    <li>Concurrency and parallelism strong support (actors, parallel collections)</li><br>    <li>Low-level system programming abilities through the built-in Red/System DSL</li><br>    <li>High-level scripting and REPL console support</li><br>    <li>Highly embeddable</li><br>    <li>Low memory footprint, garbage collected</li><br>    <li>Low disk footprint (&lt; 1MB)</li><br></ul>
 
 <h3 id="Making_a_Red_“Hello_World”">Making a Red “Hello World”</h3><p>The Red toolchain comes as a single half-megabyte executable file that you can download from here for the big-3 platforms. </p>
 <p><br><ol><br>    <li>Put the downloaded red binary in a folder that’s in the PATH, or just in the working folder.</li><br>    <li>In a code or text editor, write the following Hello World program:<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">Red [</span><br><span class="line">    Title: <span class="string">"Simple hello world script"</span></span><br><span class="line">]</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span> <span class="string">"Hello World!"</span></span><br></pre></td></tr></table></figure><br><br>    </li><br>    <li>Save it under the name: hello.red</li><br>    <li>From a terminal (works from DOS too), run it with:<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ red hello.red</span><br></pre></td></tr></table></figure><br><br>    </li><br>    <li>You should see the Hello World! output.</li><br>    <li>Want to generate a compiled executable from that program?<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ red -c hello.red</span><br><span class="line">$ ./hello</span><br></pre></td></tr></table></figure><br><br>    </li><br>    <li>Want to cross-compile to another supported platform?<br>    <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">$ red -t Windows hello.red</span><br><span class="line">$ red -t Darwin hello.red</span><br><span class="line">$ red -t Linux-ARM hello.red</span><br></pre></td></tr></table></figure><br><br>    </li><br></ol><br></p>
 
 
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
+  
+	</div>
+		<footer class="article-footer clearfix">
 <div class="article-catetags">
 
 
@@ -118,127 +113,24 @@
 
 
 
-
-<div class="comments-count">
+	<div class="article-share" id="share">
 	
-</div>
+	  <div data-url="http://http://bridget0.github.io/Introduction/index.html" data-title="Introduction | Red programming language" data-tsina="null" class="share clearfix">
+	  </div>
+	
+	</div>
+
 
 </footer>
 
-
-    </article>
-
-
-
-
-
-
-   
-    
-    <article class="post-expand post" itemprop="articleBody"> 
-        <header class="article-info clearfix">
-  <h1 itemprop="name">
-    
-      <a href="/2015/08/11/hello-world/" title="Hello World" itemprop="url">Hello World</a>
-  </h1>
-  <p class="article-author">By
-       
-		<a href="/about" title="Red" target="_blank" itemprop="author">Red</a>
-		
-  <p class="article-time">
-    <time datetime="2015-08-11T06:05:43.097Z" itemprop="datePublished"> 發表於 2015-08-11</time>
-    
-  </p>
-</header>
-    <div class="article-content">
-        
-        <p>Welcome to <a href="http://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="http://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="http://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick_Start">Quick Start</h2><h3 id="Create_a_new_post">Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run_server">Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate_static_files">Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy_to_remote_sites">Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a href="http://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-        
-        
-        <p class="article-more-link">
-          
-       </p>
-    </div>
-    <footer class="article-footer clearfix">
-<div class="article-catetags">
-
-
-</div>
-
-
-
-
-<div class="comments-count">
+   	       
+	</article>
 	
-</div>
+	
 
-</footer>
-
-
-    </article>
-
-
-
-
-
-
-
-</div>
-      <div class="openaside"><a class="navbutton" href="#" title="顯示側邊欄"></a></div>
-
-<div id="asidepart">
-<div class="closeaside"><a class="closebutton" href="#" title="隱藏側邊欄"></a></div>
-<aside class="clearfix">
-
-  
-
-  
-
-  <div class="linkslist">
-  <p class="asidetitle">友情鏈接</p>
-    <ul>
-        
-          <li>
-            
-            	<a href="http://groups.google.com/group/red-lang?hl=en" target="_blank" title="Mailing-List">Mailing-List</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://chat.stackoverflow.com/rooms/291/rebol-and-red" target="_blank" title="Chat Room">Chat Room</a>
-            
-          </li>
-        
-          <li>
-            
-            	<a href="http://chat.stackoverflow.com/rooms/50258/red-development-team" target="_blank" title="Development Room">Development Room</a>
-            
-          </li>
-        
-    </ul>
-</div>
-
-  
-
-
-  <div class="rsspart">
-	<a href="/atom.xml" target="_blank" title="rss">RSS 訂閱</a>
-</div>
-
-</aside>
-</div>
-    </div>
-    <footer><div id="footer" >
+</div>  
+        </div>
+        <footer><div id="footer" >
 	
 	<div class="line">
 		<span></span>
@@ -275,7 +167,7 @@
 		</p>
 </div>
 </footer>
-    <script src="/js/jquery-2.0.3.min.js"></script>
+        <script src="/js/jquery-2.0.3.min.js"></script>
 <script src="/js/jquery.imagesloaded.min.js"></script>
 <script src="/js/gallery.js"></script>
 <script src="/js/jquery.qrcode-0.12.0.min.js"></script>
@@ -325,6 +217,55 @@ $(document).ready(function(){
 });
 </script>
 
+
+<script type="text/javascript">
+$(document).ready(function(){ 
+  var $this = $('.share'),
+      url = $this.attr('data-url'),
+      encodedUrl = encodeURIComponent(url),
+      title = $this.attr('data-title'),
+      tsina = $this.attr('data-tsina'),
+      description = $this.attr('description');
+  var html = [
+  '<div class="hoverqrcode clearfix"></div>',
+  '<a class="overlay" id="qrcode"></a>',
+  '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="article-share-facebook" target="_blank" title="Facebook"></a>',
+  '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="article-share-twitter" target="_blank" title="Twitter"></a>',
+  '<a href="#qrcode" class="article-share-qrcode" title="微信"></a>',
+  '<a href="http://widget.renren.com/dialog/share?resourceUrl=' + encodedUrl + '&srcUrl=' + encodedUrl + '&title=' + title +'" class="article-share-renren" target="_blank" title="人人"></a>',
+  '<a href="http://service.weibo.com/share/share.php?title='+title+'&url='+encodedUrl +'&ralateUid='+ tsina +'&searchPic=true&style=number' +'" class="article-share-weibo" target="_blank" title="微博"></a>',
+  '<span title="Share to"></span>'
+  ].join('');
+  $this.append(html);
+
+  $('.hoverqrcode').hide();
+
+  var myWidth = 0;
+  function updatehoverqrcode(){
+    if( typeof( window.innerWidth ) == 'number' ) {
+      myWidth = window.innerWidth;
+    } else if( document.documentElement && document.documentElement.clientWidth) {
+      myWidth = document.documentElement.clientWidth;
+    };
+    var qrsize = myWidth > 1024 ? 200:100;
+    var options = {render: 'image', size: qrsize, fill: '#2ca6cb', text: url, radius: 0.5, quiet: 1};
+    var p = $('.article-share-qrcode').position();
+    $('.hoverqrcode').empty().css('width', qrsize).css('height', qrsize)
+                          .css('left', p.left-qrsize/2+20).css('top', p.top-qrsize-10)
+                          .qrcode(options);
+  };
+  $(window).resize(function(){
+    $('.hoverqrcode').hide();
+  });
+  $('.article-share-qrcode').click(function(){
+    updatehoverqrcode();
+    $('.hoverqrcode').toggle();
+  });
+  $('.article-share-qrcode').hover(function(){}, function(){
+      $('.hoverqrcode').hide();
+  });
+});   
+</script>
 
 
 
@@ -384,5 +325,6 @@ $(document).ready(function(){
 
 <!-- Tiny_search End -->
 
-  </body>
- </html>
+      </body>
+     </html>
+     
